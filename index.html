@@ -18,8 +18,13 @@
     <div class = "container">
     <h2>Generate a Password</h2>
         <div class = "content">
-            <input type="text" placeholder="Your Secure Password" id="displayPassword">
-            
+            <!-- <input type="text" placeholder="Your Secure Password" id="displayPassword"> -->
+            <textarea
+      readonly
+      id="displayPassword"
+      placeholder="Your Secure Password"
+      aria-label="Generated Password"
+    ></textarea>
             <input type = "range" min = "8" max = "128" id="length">
         </div>
 

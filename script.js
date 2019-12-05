@@ -1,5 +1,4 @@
 // var charactors = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!$%^&*()-=+[]{};#:@~,./<>?";
-// var generate = document.getElementById("generate");
 var save = document.getElementById("copy")
 
 function generate(){
@@ -18,3 +17,13 @@ function generate(){
     console.log(password)
     document.getElementById("displayPassword").value = password;
 }
+
+document.getElementById("pwlength").innerHTML = "Length: 8";
+
+document.getElementById("length").oninput = function (){
+    if(document.getElementById("length").value > 0){
+        document.getElementById("pwlength").innerHTML = "Length: " + document.getElementById("length").value;
+    }
+    
+}
+
