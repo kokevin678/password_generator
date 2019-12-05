@@ -1,6 +1,9 @@
+var lengthx = document.getElementById("length");
+var pwlengthx = document.getElementById("pwlength")
+
 function generate(){
 
-    var pwlength = document.getElementById("length").value;
+    var pwlength = lengthx.value;
 
     var charactors = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!$%^&*()-=+[]{};#:@~,./<>?";
 
@@ -15,12 +18,12 @@ function generate(){
     document.getElementById("displayPassword").value = password;
 }
 
-document.getElementById("pwlength").innerHTML = "Length: 8";
+lengthx.innerHTML = "Length: 8";
 
-document.getElementById("length").oninput = function (){
-    if(document.getElementById("length").value > 0){
-        document.getElementById("pwlength").innerHTML = "Length: " + document.getElementById("length").value;
-    }
+lengthx.oninput = function (){
+    if(lengthx.value > 0){
+        pwlengthx.innerHTML = "Length: " + lengthx.value;
+    }       
     
 }
 
