@@ -3,8 +3,6 @@
 Homework assignment #3, we are to create a page with password generator using upper case letter, lower case letter, numbers, and special symbols
 
 
-
-
 ## Technologies Used
 - HTML
 - CSS
