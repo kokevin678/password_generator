@@ -1,6 +1,3 @@
-// var charactors = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!$%^&*()-=+[]{};#:@~,./<>?";
-var save = document.getElementById("copy")
-
 function generate(){
 
     var pwlength = document.getElementById("length").value;
