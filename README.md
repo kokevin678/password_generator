@@ -20,7 +20,7 @@ Homework assignment #3, we are to create a page with password generator using up
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [See Live Site](https://kokevin678.github.io/password_generator/)
 
 
 ## Authors
