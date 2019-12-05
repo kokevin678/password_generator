@@ -10,27 +10,23 @@
     <title>Random Password Generator</title>
   </head>
   <body>
-
-    <header>
-      <h1>Password Generator</h1>
-    </header>
-
     <div class = "container">
-    <h2>Generate a Password</h2>
-        <div class = "content">
+        <div class = "row">
+            <div class = "col-lg-8">
+                <h1>Password Generator</h1>
+    
+                <h2>Generate a Password</h2>
+            <div class = "content">
             <!-- <input type="text" placeholder="Your Secure Password" id="displayPassword"> -->
-            <textarea
-      readonly
-      id="displayPassword"
-      placeholder="Your Secure Password"
-      aria-label="Generated Password"
-    ></textarea>
-            <input type = "range" min = "8" max = "128" id="length">
-        </div>
+            <textarea readonly id="displayPassword" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+            <input type = "range" min = "8" max = "128" value = "8" id="length">
 
-        <button onclick="generate()" >Generate Password</button>
-        <button id="copy">Copy to Clipboard</button>
-        <div id = "pwlength"></div>
+                <button type="button" class="btn btn-danger" onclick="generate()" >Generate Password</button>
+                <button type="button" class="btn btn-secondary" onclick="copy()">Copy to Clipboard</button>
+            </div>    
+                <div id = "pwlength"></div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
   </body>

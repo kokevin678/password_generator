@@ -27,3 +27,8 @@ document.getElementById("length").oninput = function (){
     
 }
 
+function copy(){
+    document.getElementById("displayPassword").select();
+    document.execCommand("copy");
+    alert("Copy to clipboard");
+}
